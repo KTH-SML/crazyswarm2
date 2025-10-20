@@ -85,6 +85,7 @@ TODO:
 	- This is always the first thing you should check
 	- If you are unsure, you can verify that this is the issue by logging a custom topic through the `crazyflies.yaml` and see if the rpy-control input gets into saturation (Update: the custom topic `low_level_control` now is included by default in the  `crazyflies.yaml`)
 	- Be aware of additional payload: This requires higher thrust, therefore the thrusters end up sooner in saturation, and possibly crash.
+ 	- Even the mocap markers are heavy enough to bring the crazyflies out of balance. The current marker-setup is thus near-symmetric and requires to (1) use `librigidbodytracker` (see section "Positioning") and (2) place the crazyflies at predefined initial positions. According to the crazyswarm doc, the payload could be further reduced by using a single marker-setup. In this case, however, the yaw is unknown at startup, and it has not been tried yet.
 2. All crazyflies are crashing at the same time
 	- Log the positions of one (or multiple) crazyflies. If the positions experience high drift (in range of meters), restart the MoCap system. Make sure the 'Crazyflie' project is started. 
 3. ... (feel free to add...)
