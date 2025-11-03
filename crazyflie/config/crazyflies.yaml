@@ -16,69 +16,102 @@ robots:
   #  
   #  in meter
 
-  cf01:
-    enabled: true
-    # enabled: false
-    uri: radio://0/80/2M/E7E7E7E701
-    initial_position: [ 0.0, 0.0, 0.0]
-    type: cf21  # see robot_types
-    # firmware_params:
-    #   kalman:
-    #     pNAcc_xy: 1.0 # default 0.5
-    # firmware_logging:
-    #   enabled: true
-    #   custom_topics:
-    #     topic_name3: 
-    #       frequency: 1
-    #       vars: ["acc.x", "acc.y"]
-    # reference_frame: "odom_cf231" # use a custom reference frame if no global coordinate system is available
+  # cf01:
+  #   enabled: false
+  #   # enabled: false
+  #   uri: radio://0/80/2M/E7E7E7E701
+  #   initial_position: [ 0.1, 0.02, 0.0]
+  #   type: cf21  # see robot_types
+  #   # firmware_params:
+  #   #   kalman:
+  #   #     pNAcc_xy: 1.0 # default 0.5
+  #   # firmware_logging:
+  #   #   enabled: true
+  #   #   custom_topics:
+  #   #     topic_name3: 
+  #   #       frequency: 1
+  #   #       vars: ["acc.x", "acc.y"]
+  #   # reference_frame: "odom_cf231" # use a custom reference frame if no global coordinate system is available
 
-  cf02:
-    enabled: true
-    # enabled: false
-    uri: radio://0/80/2M/E7E7E7E702
-    initial_position: [ 0.0,-0.4, 0.0]
-    type: cf21
+  # cf02:
+  #   #enabled: true
+  #   enabled: false
+  #   uri: radio://0/80/2M/E7E7E7E702
+  #   initial_position: [ 0.0, 0.4, 0.0]
+  #   type: cf21
 
-  cf03:
-    enabled: true
-    # enabled: false
-    uri: radio://0/80/2M/E7E7E7E703
-    initial_position: [ 0.4,-0.4, 0.0]
-    type: cf21
+  # cf03:
+  #   enabled: true
+  #   # enabled: false
+  #   uri: radio://0/80/2M/E7E7E7E703
+  #   initial_position: [ 0.4,-0.4, 0.0]
+  #   type: cf21
 
-  cf04:
-    enabled: true
-    # enabled: false
-    uri: radio://0/80/2M/E7E7E7E704
-    initial_position: [ 0.4, 0.0, 0.0]
-    type: cf21  # see robot_types
+  # cf04:
+  #   # enabled: true
+  #   enabled: false
+  #   uri: radio://0/80/2M/E7E7E7E704
+  #   initial_position: [ 0.0,-0.4, 0.0]
+  #   type: cf21  # see robot_types
 
-  cf05:
-    enabled: true
-    # enabled: false
-    uri: radio://0/80/2M/E7E7E7E705
-    initial_position: [ 0.4, 0.4, 0.0]
-    type: cf21
+  # cf05:
+  #   # enabled: true
+  #   enabled: false
+  #   uri: radio://0/80/2M/E7E7E7E705
+  #   initial_position: [ 0.4, 0.4, 0.0]
+  #   type: cf21
 
   cf06: # das hatte heute schon funktioniert
+    # enabled: true
     enabled: true
-    # enabled: false
     uri: radio://0/80/2M/E7E7E7E706
-    initial_position: [ 0.0, 0.4, 0.0]
+    initial_position: [ -0.85, -0.22, 0.1]
     type: cf21
+
+  # cf07: # das hatte heute schon funktioniert
+  #   # enabled: true
+  #   enabled: true
+  #   uri: radio://0/80/2M/E7E7E7E7EA
+  #   initial_position: [ 0.1, 0.02, 0.0]
+  #   type: cf21
+
+  # cf10: # das hatte heute schon funktioniert
+  #   enabled: true
+  #   # enabled: false
+  #   uri: radio://0/80/2M/E7E7E7E7EA
+  #   initial_position: [ 0.4, 0.4, 0.0]
+  #   type: cf21
+  # cf11: # das hatte heute schon funktioniert
+  #   enabled: true
+  #   # enabled: false
+  #   uri: radio://0/80/2M/E7E7E7E7EB
+  #   initial_position: [ 0.4, -0.4, 0.0]
+  #   type: cf21
+  # cf12: # das hatte heute schon funktioniert
+  #   enabled: true
+  #   # enabled: false
+  #   uri: radio://0/80/2M/E7E7E7E7EC
+  #   initial_position: [ -0.4, -0.4, 0.0]
+  #   type: cf21
+  # cf13: # das hatte heute schon funktioniert
+  #   enabled: true
+  #   # enabled: false
+  #   uri: radio://0/80/2M/E7E7E7E7ED
+  #   initial_position: [ -0.4, 0.4, 0.0]
+  #   type: cf21
+
 
   # The following robots are waiting for new markers
   # cf07: 
-  #   # enabled: true
-  #   enabled: false
+    # enabled: true
+    # enabled: false
   #   uri: radio://0/80/2M/E7E7E7E707
   #   initial_position: [-0.4, 0.4, 0.0]
   #   type: cf21
     
   # cf08:
-  #   # enabled: true
-  #   enabled: false
+    # enabled: true
+    # enabled: false
   #   uri: radio://0/80/2M/E7E7E7E7E7
   #   initial_position: [-0.4, 0.0, 0.0]
   #   type: cf21
@@ -157,7 +190,7 @@ all:
     default_topics:
      # remove to disable default topic
       pose:
-        frequency: 80 # Hz
+        frequency: 100 # Hz
       status:
         frequency: 1 # Hz
     #custom_topics:

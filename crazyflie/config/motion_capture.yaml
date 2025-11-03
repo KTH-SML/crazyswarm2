@@ -1,9 +1,9 @@
 /motion_capture_tracking:
   ros__parameters:
     # one of "optitrack", "optitrack_closed_source", "vicon", "qualisys", "nokov", "vrpn", "motionanalysis"
-    type: "qualisys"
+    type: "optitrack" #"qualisys"
     # Specify the hostname or IP of the computer running the motion capture software
-    hostname: "10.0.0.10"
+    hostname: '10.0.0.95' #'192.168.32.95' #"10.0.0.96"
 
     topics:
       frame_id: "mocap"
@@ -49,6 +49,13 @@
           p4: [ 0.0601, -0.0425, 0.0175]
           # p4: [-51.085, -44.515, 7.632]  # back right
           # p4: [-51.085, -44.515, 7.632]  # back right
+      arrangement_smarc:
+        offset: [0.0, 0.0, 0.0]
+        points:
+          p0: [-0.03,  0.0, 0.0]
+          p1: [ 0.03, 0.0, 0.0]
+          p2: [ 0.0,  -0.03, 0.0]
+      
       arrangement_v2:
         offset: [0.0, 0.0, 0.0]
         points:
